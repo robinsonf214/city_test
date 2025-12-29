@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "7ab2b100-6887-4433-9501-b01e1776640d",
+		"name": "city_temp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24142950",
+		"_collection_link": "https://planetary-spaceship-119572.postman.co/workspace/Team-Workspace~5e612f1f-1072-4126-885f-f5a377ffd859/collection/24142950-7ab2b100-6887-4433-9501-b01e1776640d?action=share&source=collection_link&creator=24142950"
+	},
+	"item": [
+		{
+			"name": "consuta_temp_data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.open-meteo.com/v1/forecast?latitude=-2.170998&longitude=79.922359&current=temperature_2m&timezone=auto",
+					"protocol": "https",
+					"host": [
+						"api",
+						"open-meteo",
+						"com"
+					],
+					"path": [
+						"v1",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "-2.170998"
+						},
+						{
+							"key": "longitude",
+							"value": "79.922359"
+						},
+						{
+							"key": "current",
+							"value": "temperature_2m"
+						},
+						{
+							"key": "timezone",
+							"value": "auto"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
