@@ -49,6 +49,7 @@ pip install -r requirements.txt
 Migraciones:
 cd backend
 set -a; source ../.env.local; set +a
+python manage.py makemigrations
 python manage.py migrate
 
 
