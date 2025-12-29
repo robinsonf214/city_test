@@ -37,11 +37,11 @@ $docker-compose -f docker-compose.infra.yml ps
 
 Debe mostrar algo similar:
 
-Name,Command,State,Ports
+<!-- Name,Command,State,Ports
 city_service_beat_1,celery -A city_service bea ...,Up,
 city_service_celery_1,celery -A city_service wor ...,Up,
 city_service_db_1,docker-entrypoint.sh postgres,Up,"0.0.0.0:5432->5432/tcp,:::5432->5432/tcp"
-city_service_redis_1,docker-entrypoint.sh redis ...,Up,"0.0.0.0:6379->6379/tcp,:::6379->6379/tcp"
+city_service_redis_1,docker-entrypoint.sh redis ...,Up,"0.0.0.0:6379->6379/tcp,:::6379->6379/tcp" -->
 
 ## 5️⃣ Backend Django (host con venv)
 python3 -m venv venv
